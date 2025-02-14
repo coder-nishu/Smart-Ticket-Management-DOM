@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bus Smart Ticket</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@5.0.0-beta.8/daisyui.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  </head>
+  <body class="font-railway px-8 lg:px-32">
+    <nav>
+      <div class="navbar bg-base-100">
+        <div class="navbar-start">
+          <div class="dropdown">
+            <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-5 w-5"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M4 6h16M4 12h8m-8 6h16"
+                />
+              </svg>
+            </div>
+            <ul
+              tabindex="0"
+              class="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow"
+            >
+              <li><a>Home</a></li>
+              <li><a>About</a></li>
+              <li><a>Destination</a></li>
+              <li><a>Search</a></li>
+            </ul>
+          </div>
+          <a class="btn btn-ghost text-xl font-extrabold">P-Ticket</a>
+        </div>
+        <div class="navbar-center hidden lg:flex">
+          <ul class="menu menu-horizontal px-1">
+            <li><a>Home</a></li>
+            <li><a>About</a></li>
+            <li><a>Destination</a></li>
+            <li><a>Search</a></li>
+          </ul>
+        </div>
+        <div class="navbar-end">
+          <a class="btn text-[#1DD100] bg-[#1dd1001a] border-[#1dd10066]"
+            >Bus <span><img src="images/bus-icon.png" alt="" /></span
+          ></a>
+        </div>
+      </div>
+    </nav>
+    <main>
+      <!-- <section class="banner">
+        <div class="relative">
+          <div>
+            <img src="images/banner.png" alt="" />
+          </div>
+          <div
+            class="max-w-md absolute top-[40%] right-[50%] translate-x-[50%] translate-y-[-50%] text-center"
+          >
+            <h1 class="mb-5 text-4xl font-bold text-white">
+              End-to-End Travel with
+            </h1>
+            <h1 class="mb-5 text-4xl font-bold text-[#1DD100]">P Paribahan</h1>
+            <p class="mb-4 text-white">
+              Yes, you can run unit tests and view the results directly within
+              the app. The integrated testing features allow for a streamlined .
+            </p>
+            <button class="btn bg-[#1DD100] border-none font-bold">
+              Buy Tickets
+            </button>
+          </div>
+          <div class="card-container mb-32 relative -my-12 flex justify-around">
+            <div
+              class="card w-60 bg-base-100 rounded-3xl card-sm shadow-sm border-b-2 border-[#1DD100] bg-white py-4"
+            >
+              <div class="flex justify-center items-center space-x-2">
+                <div class="">
+                  <img src="images/people.png" alt="" />
+                </div>
+                <div class="">
+                  <h2 class="text-3xl font-bold">500K+</h2>
+                  <p class="text-[#03071299]">Registered users</p>
+                </div>
+              </div>
+            </div>
+            <div
+              class="card w-60 bg-base-100 rounded-3xl card-sm shadow-sm border-b-2 border-[#1DD100] bg-white py-4"
+            >
+              <div class="flex justify-center items-center space-x-2">
+                <div class="">
+                  <img src="images/ticket-cupon.png" alt="" />
+                </div>
+                <div class="">
+                  <h2 class="text-3xl font-bold">1.7 Lacks</h2>
+                  <p class="text-[#03071299]">Tickets sold</p>
+                </div>
+              </div>
+            </div>
+            <div
+              class="card w-60 bg-base-100 rounded-3xl card-sm shadow-sm border-b-2 border-[#1DD100] bg-white py-4"
+            >
+              <div class="flex justify-center items-center space-x-2">
+                <div class="">
+                  <img src="images/stoppage.png" alt="" />
+                </div>
+                <div class="">
+                  <h2 class="text-3xl font-bold">80K+</h2>
+                  <p class="text-[#03071299]">Rental partners</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section> -->
+
+      <section class="banner w-full">
+        <div class="relative w-full hidden md:hidden lg:block">
+          <!-- Banner Image -->
+          <div class="w-full">
+            <img
+              src="images/banner.png"
+              alt="Banner"
+              class="w-full h-auto object-cover"
+            />
+          </div>
+
+          <!-- Text Content (Centered) -->
+          <div
+            class="absolute top-[40%] left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center text-4xl"
+          >
+            <div>
+              <h1 class="mb-3 text-white lg:font-bold">
+                End-to-End Travel with
+              </h1>
+              <h1 class="mb-3 font-bold text-[#1DD100]">P Paribahan</h1>
+              <p class="mb-4 text-white md:text-base">
+                Yes, you can run unit tests and view the results directly within
+                the app. The integrated testing features allow for a streamlined
+                experience.
+              </p>
+            </div>
+            <div>
+              <button
+                class="btn bg-[#1DD100] border-none font-bold px-5 py-2 md:px-6 md:py-3 rounded-lg md:text-base"
+              >
+                Buy Tickets
+              </button>
+            </div>
+          </div>
+          
+        </div>
+        <!-- banner Content for small device -->
+        <div class="hero bg-base-200 min-h-auto w-full lg:hidden">
+            <div class="hero-content flex-col lg:flex-row">
+              <img
+                src="images/banner.png"
+                class="max-w-sm rounded-lg shadow-2xl" />
+              <div class="text-center">
+                <h1 class="text-3xl font-bold">End-to-End Travel with </h1>
+                <h1 class="text-3xl font-bold text-[#1DD100]">P Paribahan</h1>
+                <p class="py-4">
+                    Yes, you can run unit tests and view the results directly within the app. The integrated testing features allow for a streamlined .
+                </p>
+                <button
+                class="btn bg-[#1DD100] border-none font-bold px-5 py-2 rounded-lg md:text-base"
+              >
+                Buy Tickets
+              </button>
+              </div>
+            </div>
+          </div>
+
+        <!-- Cards Section -->
+        <div
+          class="card-container w-full lg:relative lg:-mt-12 flex flex-col sm:flex-row justify-center lg:justify-around  items-center space-y-4 md:my-6 sm:my-3"
+        >
+          <!-- Card 1 -->
+          <div
+            class="card w-full sm:w-60 bg-white rounded-3xl shadow-sm border-b-2 border-[#1DD100] py-4 px-6"
+          >
+            <div class="flex items-center space-x-4">
+              <img src="images/people.png" alt="People" class="w-10 h-10" />
+              <div>
+                <h2 class="text-2xl font-bold">500K+</h2>
+                <p class="text-[#03071299] text-sm">Registered users</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 2 -->
+          <div
+            class="card w-full sm:w-60 bg-white rounded-3xl shadow-sm border-b-2 border-[#1DD100] py-4 px-6"
+          >
+            <div class="flex items-center space-x-4">
+              <img
+                src="images/ticket-cupon.png"
+                alt="Ticket"
+                class="w-10 h-10"
+              />
+              <div>
+                <h2 class="text-2xl font-bold">1.7 Lacks</h2>
+                <p class="text-[#03071299] text-sm">Tickets sold</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 3 -->
+          <div
+            class="card w-full sm:w-60 bg-white rounded-3xl shadow-sm border-b-2 border-[#1DD100] py-4 px-6"
+          >
+            <div class="flex items-center space-x-4">
+              <img src="images/stoppage.png" alt="Stoppage" class="w-10 h-10" />
+              <div>
+                <h2 class="text-2xl font-bold">80K+</h2>
+                <p class="text-[#03071299] text-sm">Rental partners</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="offer mb-96"></section>
+      <section class="ticket-dashboard"></section>
+    </main>
+    <footer></footer>
+  </body>
+</html>
