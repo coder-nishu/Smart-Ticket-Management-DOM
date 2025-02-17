@@ -11,7 +11,7 @@
     />
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
   </head>
-  <body class="font-railway px-8 lg:px-32">
+  <body class="font-railway px-6 lg:px-32">
     <nav>
       <div class="navbar bg-base-100">
         <div class="navbar-start">
@@ -60,70 +60,6 @@
       </div>
     </nav>
     <main>
-      <!-- <section class="banner">
-        <div class="relative">
-          <div>
-            <img src="images/banner.png" alt="" />
-          </div>
-          <div
-            class="max-w-md absolute top-[40%] right-[50%] translate-x-[50%] translate-y-[-50%] text-center"
-          >
-            <h1 class="mb-5 text-4xl font-bold text-white">
-              End-to-End Travel with
-            </h1>
-            <h1 class="mb-5 text-4xl font-bold text-[#1DD100]">P Paribahan</h1>
-            <p class="mb-4 text-white">
-              Yes, you can run unit tests and view the results directly within
-              the app. The integrated testing features allow for a streamlined .
-            </p>
-            <button class="btn bg-[#1DD100] border-none font-bold">
-              Buy Tickets
-            </button>
-          </div>
-          <div class="card-container mb-32 relative -my-12 flex justify-around">
-            <div
-              class="card w-60 bg-base-100 rounded-3xl card-sm shadow-sm border-b-2 border-[#1DD100] bg-white py-4"
-            >
-              <div class="flex justify-center items-center space-x-2">
-                <div class="">
-                  <img src="images/people.png" alt="" />
-                </div>
-                <div class="">
-                  <h2 class="text-3xl font-bold">500K+</h2>
-                  <p class="text-[#03071299]">Registered users</p>
-                </div>
-              </div>
-            </div>
-            <div
-              class="card w-60 bg-base-100 rounded-3xl card-sm shadow-sm border-b-2 border-[#1DD100] bg-white py-4"
-            >
-              <div class="flex justify-center items-center space-x-2">
-                <div class="">
-                  <img src="images/ticket-cupon.png" alt="" />
-                </div>
-                <div class="">
-                  <h2 class="text-3xl font-bold">1.7 Lacks</h2>
-                  <p class="text-[#03071299]">Tickets sold</p>
-                </div>
-              </div>
-            </div>
-            <div
-              class="card w-60 bg-base-100 rounded-3xl card-sm shadow-sm border-b-2 border-[#1DD100] bg-white py-4"
-            >
-              <div class="flex justify-center items-center space-x-2">
-                <div class="">
-                  <img src="images/stoppage.png" alt="" />
-                </div>
-                <div class="">
-                  <h2 class="text-3xl font-bold">80K+</h2>
-                  <p class="text-[#03071299]">Rental partners</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section> -->
-
       <section class="banner w-full">
         <div class="relative w-full hidden md:hidden lg:block">
           <!-- Banner Image -->
@@ -158,32 +94,34 @@
               </button>
             </div>
           </div>
-          
         </div>
         <!-- banner Content for small device -->
-        <div class="hero bg-base-200 min-h-auto lg:hidden">
-            <div class="hero-content flex-col lg:flex-row">
-              <img
-                src="images/banner.png"
-                class="max-w-full rounded-lg shadow-2xl" />
-              <div class="text-center">
-                <h1 class="text-xl font-bold">End-to-End Travel with </h1>
-                <h1 class="text-xl font-bold text-[#1DD100]">P Paribahan</h1>
-                <p class="py-4">
-                    Yes, you can run unit tests and view the results directly within the app. The integrated testing features allow for a streamlined .
-                </p>
-                <button
+        <div class="hero min-h-auto lg:hidden">
+          <div class="hero-content flex-col lg:flex-row">
+            <img
+              src="images/banner.png"
+              class="max-w-full rounded-lg shadow-2xl"
+            />
+            <div class="text-center">
+              <h1 class="text-xl font-bold">End-to-End Travel with</h1>
+              <h1 class="text-xl font-bold text-[#1DD100]">P Paribahan</h1>
+              <p class="py-4">
+                Yes, you can run unit tests and view the results directly within
+                the app. The integrated testing features allow for a streamlined
+                .
+              </p>
+              <button
                 class="btn bg-[#1DD100] border-none font-bold px-5 py-2 rounded-lg md:text-base"
               >
                 Buy Tickets
               </button>
-              </div>
             </div>
           </div>
+        </div>
 
         <!-- Cards Section -->
         <div
-          class="card-container w-full lg:relative lg:-mt-12 flex flex-col sm:flex-row justify-center lg:justify-around  items-center space-y-4 md:my-6 sm:my-3"
+          class="card-container w-full lg:relative lg:-mt-12 flex flex-col sm:flex-row justify-center lg:justify-around items-center space-y-4 md:my-6 sm:my-3"
         >
           <!-- Card 1 -->
           <div
@@ -229,9 +167,52 @@
           </div>
         </div>
       </section>
-
-      <section class="offer mb-96"></section>
-      <section class="ticket-dashboard"></section>
+      <section class="offer my-20 font-railway">
+        <h1 class="text-3xl text-center font-bold pb-12">
+          Best offers for you
+        </h1>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+          <div
+            class="flex justify-around items-center bg-[#FFBF0F] h-[220px] rounded-2xl text-black p-3"
+          >
+            <div class=" ">
+              <h2 class="card-title font-extrabold text-4xl">15% OFF</h2>
+              <p class="font-bold text-xl">on your next purchase</p>
+              <p>use by January 2024</p>
+            </div>
+            <img src="images/cupon-devider.png" alt="">
+            <div>
+              <p class="font-bold text-xl">NEW15</p>
+              <p>Coupon Code</p>
+            </div>
+          </div>
+          <div
+            class="flex justify-around items-center bg-[#FFBF0F]  h-[220px] rounded-2xl text-black p-3"
+          >
+            <div class=" ">
+              <h2 class="card-title font-extrabold text-4xl">20% OFF</h2>
+              <p class="font-bold text-xl">on your next purchase</p>
+              <p>use by January 2024</p>
+            </div>
+            <img src="images/cupon-devider.png" alt="">
+            <div>
+              <p class="font-bold text-xl">Couple20</p>
+              <p>Coupon Code</p>
+            </div>
+          </div>
+        </div>
+        <div class="text-center">
+          <button class="btn border-dashed border-[#1DD100] text-[#1DD100] mt-12">See All Offers</button>
+        </div>
+      </section>
+      <section class="ticket-dashboard">
+        <div>
+          <div class="pb-12 text-center space-y-6">
+            <h1 class="text-3xl text-center font-bold">P.H Paribahan</h1>
+            <p class="text-[#03071299] ">Yes, you can run unit tests and view the results directly within the app. The integrated testing features allow for a streamlined .</p>
+          </div>
+        </div>
+      </section>
     </main>
     <footer></footer>
   </body>
