@@ -11,8 +11,8 @@
     />
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
   </head>
-  <body class="font-railway px-6 lg:px-32">
-    <nav>
+  <body class="font-railway ">
+    <nav class="px-6 lg:px-32">
       <div class="navbar bg-base-100">
         <div class="navbar-start">
           <div class="dropdown">
@@ -60,7 +60,7 @@
       </div>
     </nav>
     <main>
-      <section class="banner w-full">
+      <section class="banner w-full px-6 lg:px-32">
         <div class="relative w-full hidden md:hidden lg:block">
           <!-- Banner Image -->
           <div class="w-full">
@@ -167,7 +167,7 @@
           </div>
         </div>
       </section>
-      <section class="offer my-20 font-railway">
+      <section class="offer my-20 font-railway px-6 lg:px-32">
         <h1 class="text-3xl text-center font-bold pb-12">
           Best offers for you
         </h1>
@@ -205,11 +205,49 @@
           <button class="btn border-dashed border-[#1DD100] text-[#1DD100] mt-12">See All Offers</button>
         </div>
       </section>
-      <section class="ticket-dashboard">
-        <div>
-          <div class="pb-12 text-center space-y-6">
+      <section class="ticket-dashboard border-t-2 bg-[#F7F8F8] border-[#1DD100] rounded-[88px]">
+        <div class="p-12">
+          <div class="py-12 px-3 text-center space-y-6">
             <h1 class="text-3xl text-center font-bold">P.H Paribahan</h1>
             <p class="text-[#03071299] ">Yes, you can run unit tests and view the results directly within the app. The integrated testing features allow for a streamlined .</p>
+          </div>
+          <div class="ticket-section-card h-[350px] bg-white flex flex-col lg:flex-row  rounded-xl lg:mx-20 font-railway lg:px-32 px-2 lg:gap-8">
+            <div class="flex-2">
+              <div class="ticket-card-header flex flex-col lg:flex-row justify-between items-center ">
+                <div class="flex items-center gap-3 p-3">
+                  <img src="images/bus-logo.png" alt="">
+                  <div>
+                    <h1 class="text-4xl font-bold ">Greenline Paribahan</h1>
+                    <p class="text-[#03071299]">Coach-009-WEB ! AC_Business</p>
+                  </div>
+                </div>
+                <div>
+                  <button class="btn bg-[#1DD10026] rounded-xl text-[#1DD100]"><img src="images/seat-green.png" alt=""><span>40</span>Seats Left</button>
+                </div>
+              </div>
+              <div class="route-details-container bg-[#F7F8F8] rounded-xl space-y-6 p-7">
+                <div class="text-[#03071299] flex justify-between border-b border-dashed border-[#03071233] pb-2">
+                  <p>Route</p>
+                  <p class="text-black">Dhaka - Sylhet</p>
+                </div>
+                
+                <div class="text-[#03071299] flex justify-between border-b border-dashed border-[#03071233] pb-2">
+                  <p>Departure Time</p>
+                  <p class="text-black">9:00Pm</p>
+                </div>
+                <div class="flex flex-col lg:flex-row justify-between space-y-2">
+                  <button class="btn bg-[#0307120D] text-[#030712CC] rounded-xl">Boarding Point - Laxmipur</button>
+                  <button class="btn bg-[#0307120D] text-[#030712CC] rounded-xl">Dropping Point - Bogura</button>
+                  <button class="btn bg-[#0307120D] text-[#030712CC] rounded-xl">Est. Time - 11 Hour</button>
+                </div>
+              </div>
+            </div>
+            <img class="h-full hidden lg:block" src="images/info-devider.png" alt="">
+            <div class="flex flex-col justify-center items-center">
+              <div><img src="images/fare.png" alt=""></div>
+              <h1 class="text-3xl font-bold">550 Taka</h1>
+              <p class="text-[#03071299]">per Seat</p>
+            </div>
           </div>
         </div>
       </section>
