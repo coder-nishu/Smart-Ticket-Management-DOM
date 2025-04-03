@@ -236,7 +236,7 @@
                 </div>
                 <div class="my-3">
                   <button class="btn bg-[#1DD10026] rounded-xl text-[#1DD100]">
-                    <img src="images/seat-green.png" alt="" /><span>40</span
+                    <img src="images/seat-green.png" alt="" /><span id="num-of-available-seat">40</span
                     >Seats Left
                   </button>
                 </div>
@@ -322,7 +322,7 @@
               <div class="seatA flex justify-between items-center">
                 <div class="flex items-center gap-6">
                   <h3>A</h3>
-                  <button class="btn bg-[#F7F8F8] w-auto lg:w-20 p-4 rounded-lg" id="A1">
+                  <button class="btn bg-[#F7F8F8] w-auto lg:w-20 p-4 rounded-lg " id="A1">
                     A1
                   </button>
                   <button class="btn bg-[#F7F8F8] w-auto lg:w-20 p-4 rounded-lg" id="A2">
@@ -522,7 +522,7 @@
           </div>
           <div class="passenger-details space-y-3 p-4">
             <h3 class="text-2xl font-bold pt-3">Selected Seat & Passenger Info</h3>
-            <div class="seat-booking-card bg-[#F7F8F8] rounded-xl">
+            <div class="seat-booking-card bg-[#F7F8F8] rounded-xl p-6">
               <div
                 class="flex justify-between items-center p-4 border-b-1 border-[#03071299] border-dashed"
               >
@@ -530,7 +530,7 @@
                   <div class="flex items-center gap-1">
                     <h1>Seat</h1>
                     <div class="text-xs w-5 h-6 text-center text-white bg-[#1DD100] p-1 rounded-full">
-                      0
+                      <span id="num-of-seat">0</span>
                     </div>
                   </div>
                 </h1>
@@ -542,6 +542,18 @@
               >
                 <h3>Total Price:</h3>
                 <p>BDT <span>0</span></p>
+              </div>
+              <div class="coupon-text  flex flex-row justify-between items-center rounded-xl px-2 bg-white hidden" id="coupon-box">
+                <input
+                type="text"
+                placeholder="Have any coupon?"
+                class="w-60 h-12 rounded-lg p-4 border-none "
+              />
+              <button
+              class="btn bg-[#1DD100] w-20 h-10  rounded-lg text-white"
+            >
+              Apply
+            </button>
               </div>
               <div
                 class="text-xl font-semibold flex justify-between items-center p-2"
@@ -609,5 +621,7 @@
         </div>
       </nav>
     </footer>
+    <script src="Js/script.js"></script>
+    <script src="Js/utilities.js"></script>
   </body>
 </html>
