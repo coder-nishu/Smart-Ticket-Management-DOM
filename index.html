@@ -88,7 +88,7 @@
             </div>
             <div>
               <button
-                class="btn bg-[#1DD100] border-none font-bold px-5 py-2 md:px-6 md:py-3 rounded-lg md:text-base"
+                class="btn bg-[#1DD100] border-none font-bold px-5 py-2 md:px-6 md:py-3 rounded-lg md:text-base" id="btn-buy-ticket"
               >
                 Buy Tickets
               </button>
@@ -111,7 +111,7 @@
                 .
               </p>
               <button
-                class="btn bg-[#1DD100] border-none font-bold px-5 py-2 rounded-lg md:text-base"
+                class="btn bg-[#1DD100] border-none font-bold px-5 py-2 rounded-lg md:text-base" id="btn-buy-ticket"
               >
                 Buy Tickets
               </button>
@@ -210,7 +210,7 @@
         </div>
       </section>
       <section
-        class="ticket-dashboard border-t-2 h-full bg-[#F7F8F8] border-[#1DD100] rounded-[88px] p-4 space-y-3 mb-32"
+        class="ticket-dashboard border-t-2 h-full bg-[#F7F8F8] border-[#1DD100] rounded-[88px] p-4 space-y-3 mb-32" 
       >
         <div>
           <div class="py-12 px-3 text-center space-y-6">
@@ -295,12 +295,14 @@
         <div
           class="bg-white flex flex-col lg:flex-row justify-evenly space-x-5 lg:mx-20 lg:p-8 rounded-xl"
         >
-          <div class="w-auto lg:w-[600px] p-4 lg:border-r border-dashed">
+          <div class="w-auto lg:w-[600px] p-4 lg:border-r border-dashed" id="ticket-buying-section">
             <h3
               class="text-2xl font-semibold border-b border-[#03071280] border-dashed pb-4"
             >
-              Select Your Seat
+              Select Your Seat <br> 
+              <span class="text-sm">*Can Select Max 4 Seat*</span>
             </h3>
+            
             <div
               class="flex justify-between items-center border-b border-dashed p-4"
             >
@@ -705,9 +707,10 @@
               />
               <h3 class="font-bold">Phone Number*</h3>
               <input
-                type="text"
+                type="number"
                 placeholder="Enter your phone number"
                 class="w-80 h-12 rounded-lg p-4"
+                id="input-phn"
                 required
               />
               <h3 class="font-bold">Email Address</h3>
@@ -719,9 +722,13 @@
               <div>
                 <button
                   class="btn bg-[#1DD100] w-80 h-12 rounded-lg px-5 my-3 py-7 text-2xl font-bold text-white"
+                  disabled id="next-btn"
                 >
                   Next
                 </button>
+                <div>
+                  <p class="text-[red] hidden" id="phn-incorrect" >*Phone Number is not accurate</p>
+                </div>
                 <div class="flex justify-between items-center space-x-2">
                   <p class="text-[#03071299] border-b-1">
                     Terms and Conditions
@@ -736,6 +743,28 @@
         </div>
       </section>
     </main>
+    <!-- Open the modal using ID.showModal() method -->
+
+<dialog id="my_modal_1" class="modal">
+  <div class="modal-box">
+    <div class="flex flex-col justify-center items-center mb-9">
+      <img class="flex-1" src="images/success.png" alt="">
+      <h1 class="text-[#27AE60] text-xl text-center font-semibold">SUCCESSS</h1>
+    </div>
+    <p class="text-center font-semibold">Thank you for Booking Our Bus Seats. 
+      We are working hard to find the best service and deals for you. 
+      </p>
+    <p class="text-center">Shortly you will find a confirmation in your email. 
+      </p>
+    <div class="modal-action flex justify-center items-center">
+      <form method="dialog">
+        <!-- if there is a button in form, it will close the modal -->
+        <button class="btn bg-[#27AE60] w-[300px] rounded-[300px]">Continue</button>
+      </form>
+    </div>
+  </div>
+</dialog>
+    </div>
     <footer
       class="footer sm:footer-horizontal bg-neutral text-neutral-content p-32"
     >
