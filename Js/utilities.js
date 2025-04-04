@@ -19,10 +19,6 @@ function deselectBtnColor(event){
         selectedBtnColor(seatid)
         console.log(selectedSeats)
     }
-    if(selectedSeats.lengthn >= max_Seat){
-        alert("Maximum seat exceed")
-        console.log("Maximum seat exceed")
-    }
 }
 
 function updateBtnStateOnMaxSelection(){
@@ -45,4 +41,21 @@ function updateBtnStateOnMaxSelection(){
                 btn.classList.remove('opacity-50', 'cursor-not-allowed');
         })
     }
+}
+function addingSeatClassPrice(selectedSeats, seatClass, price) {
+    const seat_info_price = document.getElementById('seat-info-price-container')
+    seat_info_price.innerHTML = ``
+    selectedSeats.forEach(element => {
+        const newDiv = document.createElement('div')
+        newDiv.classList.add('flex', 'justify-between', 'items-center', 'p-4')
+        newDiv.innerHTML =
+            `
+            <h1>${element}</h1>
+            <h1>${seatClass}</h1>
+            <h1>${price}</h1>
+            `;
+        seat_info_price.appendChild(newDiv);
+
+    });
+
 }
