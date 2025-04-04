@@ -523,27 +523,34 @@
           <div class="passenger-details space-y-3 p-4">
             <h3 class="text-2xl font-bold pt-3">Selected Seat & Passenger Info</h3>
             <div class="seat-booking-card bg-[#F7F8F8] rounded-xl p-6">
-              <div
+              <div>
+                <div
                 class="flex justify-between items-center p-4 border-b-1 border-[#03071299] border-dashed"
               >
-                <h1 class="font-semibold">
-                  <div class="flex items-center gap-1">
+                  <div class="flex items-center gap-1 font-semibold">
                     <h1>Seat</h1>
                     <div class="text-xs w-5 h-6 text-center text-white bg-[#1DD100] p-1 rounded-full">
                       <span id="num-of-seat">0</span>
                     </div>
                   </div>
-                </h1>
                 <h1 class="font-semibold">Class</h1>
                 <h1 class="font-semibold">Price</h1>
+              </div>
+              <div
+                class="flex justify-between items-center p-4"
+              >
+                <h1>Seat</h1>
+                <h1>Class</h1>
+                <h1>Price</h1>
+              </div>
               </div>
               <div
                 class="text-xl font-semibold flex justify-between items-center p-2"
               >
                 <h3>Total Price:</h3>
-                <p>BDT <span>0</span></p>
+                <p>BDT <span id="total-price">0</span></p>
               </div>
-              <div class="coupon-text  flex flex-row justify-between items-center rounded-xl px-2 bg-white hidden" id="coupon-box">
+              <div class="coupon-text  flex flex-row justify-between items-center rounded-xl px-2 bg-white " id="coupon-box">
                 <input
                 type="text"
                 placeholder="Have any coupon?"
@@ -559,7 +566,7 @@
                 class="text-xl font-semibold flex justify-between items-center p-2"
               >
                 <h3>Grand Total:</h3>
-                <p>BDT <span>0</span></p>
+                <p>BDT <span id="grand-price">0</span></p>
               </div>
             </div>
             <div class="flex flex-col md:items-center space-y-2">
@@ -617,7 +624,6 @@
             <p class="text-xs font-semibold">GET IT ON</p>
             <p class="text-lg font-bold">Google Play</p>
           </div>
-        </div>
         </div>
       </nav>
     </footer>

@@ -29,4 +29,13 @@ function updateSeatInfoState() {
         const couponBox = document.getElementById('coupon-box') 
         couponBox.classList.add('hidden')
     }
+    //total price update
+    const t_price = document.getElementById('total-price')
+    const g_price = document.getElementById('grand-price')
+    const price = selectedSeats.length * 550
+    t_price.innerText = price
+    g_price.innerText = price
+
+    //seat info adding for per seat selection
+    
 }
