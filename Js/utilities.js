@@ -59,3 +59,16 @@ function addingSeatClassPrice(selectedSeats, seatClass, price) {
     });
 
 }
+function discountAmount(discount){
+    const discountAmntBox = document.getElementById('discount-amount-box')
+    const newDiv = document.createElement('div')
+    newDiv.classList.add('text-xl', 'font-semibold','flex', 'justify-between', 'items-center', 'p-2')
+    discountAmntBox.innerHTML = ``;
+    
+    newDiv.innerHTML = 
+    `
+    <h3>Discount Price:</h3>
+    <p>BDT ${discount}</p>
+    `
+    discountAmntBox.appendChild(newDiv);
+}

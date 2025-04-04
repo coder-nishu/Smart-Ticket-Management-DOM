@@ -51,13 +51,17 @@ document.getElementById('coupon-btn').addEventListener('click', () => {
     const price_4person = 550 * 4
     const g_price = document.getElementById('grand-price')
     if (inputVal.toLowerCase() === coupon1) {
-        g_price.innerText = (price_4person - (price_4person * 0.15))
+        const discount1 = price_4person*0.15
+        g_price.innerText = (price_4person - discount1)
         const couponBox = document.getElementById('coupon-box')
-        couponBox.classList.add('hidden')
+        couponBox.classList.add('hidden');
+        discountAmount(discount1);
     } else if (inputVal.toLowerCase() === coupon2) {
-        g_price.innerText = (price_4person - (price_4person * 0.2))
+        const discount = price_4person*0.2
+        g_price.innerText = (price_4person - discount)
         const couponBox = document.getElementById('coupon-box')
-        couponBox.classList.add('hidden')
+        couponBox.classList.add('hidden');
+        discountAmount(discount);
     }
     else {
         alert("Coupon Code Is Not Valid.Try Again")
