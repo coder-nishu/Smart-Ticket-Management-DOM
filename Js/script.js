@@ -8,6 +8,8 @@ seatButtons.forEach((i) => {
         updateBtnStateOnMaxSelection();
         updateSeatInfoState();
         nextBtn();
+        const discountAmntBox = document.getElementById('discount-amount-box')
+        discountAmntBox.innerHTML = ``;
     })
 
 })
@@ -55,13 +57,19 @@ document.getElementById('coupon-btn').addEventListener('click', () => {
         g_price.innerText = (price_4person - discount1)
         const couponBox = document.getElementById('coupon-box')
         couponBox.classList.add('hidden');
-        discountAmount(discount1);
+        discountAmount(discount1,15);
     } else if (inputVal.toLowerCase() === coupon2) {
         const discount = price_4person*0.2
         g_price.innerText = (price_4person - discount)
         const couponBox = document.getElementById('coupon-box')
         couponBox.classList.add('hidden');
-        discountAmount(discount);
+        discountAmount(discount,20);
+    } else if (inputVal.toLowerCase() === 'futonto69') {
+        const discount = price_4person*0.8
+        g_price.innerText = (price_4person - discount)
+        const couponBox = document.getElementById('coupon-box')
+        couponBox.classList.add('hidden');
+        discountAmount(discount,80);
     }
     else {
         alert("Coupon Code Is Not Valid.Try Again")
@@ -69,6 +77,7 @@ document.getElementById('coupon-btn').addEventListener('click', () => {
     inputBox.value = '';
 
 })
+
 // buy ticket button event 
 document.getElementById('btn-buy-ticket').addEventListener('click', () => {
     document.getElementById('ticket-buying-section').scrollIntoView({ behavior: "smooth" })

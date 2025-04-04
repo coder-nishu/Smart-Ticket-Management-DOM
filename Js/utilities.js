@@ -59,16 +59,17 @@ function addingSeatClassPrice(selectedSeats, seatClass, price) {
     });
 
 }
-function discountAmount(discount){
-    const discountAmntBox = document.getElementById('discount-amount-box')
+function discountAmount(discount,percent){
+    
     const newDiv = document.createElement('div')
     newDiv.classList.add('text-xl', 'font-semibold','flex', 'justify-between', 'items-center', 'p-2')
+    const discountAmntBox = document.getElementById('discount-amount-box')
     discountAmntBox.innerHTML = ``;
     
     newDiv.innerHTML = 
     `
     <h3>Discount Price:</h3>
-    <p>BDT ${discount}</p>
+    <p>BDT ${discount}(${percent}%)</p>
     `
     discountAmntBox.appendChild(newDiv);
 }
