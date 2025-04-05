@@ -10,9 +10,10 @@
       type="text/css"
     />
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="Style/style.css">
   </head>
   <body class="font-railway">
-    <nav class="px-6 lg:px-32">
+    <nav class="px-6 lg:px-32 sticky top-0 z-10 ">
       <div class="navbar bg-base-100">
         <div class="navbar-start">
           <div class="dropdown">
@@ -36,31 +37,31 @@
               tabindex="0"
               class="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow"
             >
-              <li><a>Home</a></li>
-              <li><a>About</a></li>
-              <li><a>Destination</a></li>
-              <li><a>Search</a></li>
+              <li><a href="#home">Home</a></li>
+              <li><a href="#about">About</a></li>
+              <li><a href="#destination">Destination</a></li>
+              <li><a href="#coupon-section">Coupon</a></li>
             </ul>
           </div>
           <a class="btn btn-ghost text-xl font-extrabold">P-Ticket</a>
         </div>
         <div class="navbar-center hidden lg:flex">
           <ul class="menu menu-horizontal px-1">
-            <li><a>Home</a></li>
-            <li><a>About</a></li>
-            <li><a>Destination</a></li>
-            <li><a>Search</a></li>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#destination">Destination</a></li>
+            <li><a href="#coupon-section">Coupon</a></li>
           </ul>
         </div>
         <div class="navbar-end">
-          <a class="btn text-[#1DD100] bg-[#1dd1001a] border-[#1dd10066]"
+          <a href="#ticket-buying-section" class="btn text-[#1DD100] bg-[#1dd1001a] border-[#1dd10066]" 
             >Bus <span><img src="images/bus-icon.png" alt="" /></span
           ></a>
         </div>
       </div>
     </nav>
     <main>
-      <section class="banner w-full px-6 lg:px-32">
+      <section class="banner w-full px-6 lg:px-32" id="home">
         <div class="relative w-full hidden md:hidden lg:block">
           <!-- Banner Image -->
           <div class="w-full">
@@ -168,7 +169,7 @@
         </div>
       </section>
       <section class="offer my-20 font-railway px-6 lg:px-32">
-        <h1 class="text-3xl text-center font-bold pb-12">
+        <h1 class="text-3xl text-center font-bold pb-12" id="coupon-section">
           Best offers for you
         </h1>
         <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
@@ -210,7 +211,7 @@
         </div>
       </section>
       <section
-        class="ticket-dashboard border-t-2 h-full bg-[#F7F8F8] border-[#1DD100] rounded-[88px] p-4 space-y-3 mb-32" 
+        class="ticket-dashboard border-t-2 h-full bg-[#F7F8F8] border-[#1DD100] rounded-[88px] p-4 space-y-3 mb-32" id="destination"
       >
         <div>
           <div class="py-12 px-3 text-center space-y-6">
@@ -769,7 +770,7 @@
 </dialog>
     </div>
     <footer
-      class="footer sm:footer-horizontal bg-neutral text-neutral-content p-32"
+      class="footer sm:footer-horizontal bg-neutral text-neutral-content p-32" id="about"
     >
       <aside>
         <h3 class="text-4xl font-bold">P-Ticket</h3>
