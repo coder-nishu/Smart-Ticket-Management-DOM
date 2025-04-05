@@ -79,9 +79,9 @@ document.getElementById('coupon-btn').addEventListener('click', () => {
 })
 
 // buy ticket button event 
-document.getElementById('btn-buy-ticket').addEventListener('click', () => {
+function buyTicketScrollDown() {
     document.getElementById('ticket-buying-section').scrollIntoView({ behavior: "smooth" })
-})
+}
 
 function nextBtn(){
     const numField = document.getElementById('input-phn')
