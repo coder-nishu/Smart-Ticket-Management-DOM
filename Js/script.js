@@ -1,7 +1,6 @@
 const max_Seat = 4
 var selectedSeats = []
 const seatButtons = document.querySelectorAll('.seat-container .btn');
-document.scrollIntoView({behavior: "smooth"})
 seatButtons.forEach((i) => {
     i.addEventListener('click', () => {
         seatSelectionHandler(i.id);
